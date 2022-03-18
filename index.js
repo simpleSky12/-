@@ -895,7 +895,7 @@ const flatArr = (arr) => {
     if (!flat) {
       console.log(idx);
       const newObj = Object.assign(arrObj, obj);
-      arrList.push(Object.assign(arrObj, obj));
+      arrList.push(newObj);
       return;
     }
     const { children, ...rest } = obj;
